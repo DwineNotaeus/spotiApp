@@ -1,0 +1,13 @@
+<h1>List <small>Countries</small></h1>
+<hr>
+
+<div class="card-columns">
+    <div class="card animated fadeIn fast" *ngFor="let pais of paises; let i = index">
+        <img class="card-img-top" [src]="pais.flag" [alt]="pais.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{pais.name}}</h5>
+            <p class="card-text">{{pais.name}}</p>
+            <p class="card-text"><small class="text-muted">{{pais.name}}</small></p>
+        </div>
+    </div>
+</div>
